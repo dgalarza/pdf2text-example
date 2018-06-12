@@ -1,7 +1,7 @@
 <h1>PDF2Text</h1>
 <p>Enter a URL below to a valid PDF file and we will display it's text here</p>
 
-<%= simple_form_for @pdf_file, url: parse_pdfs_path do |f| %>
+<%= simple_form_for @pdf_file do |f| %>
  <%= f.input :url %>
  <%= f.submit %>
 <% end %>

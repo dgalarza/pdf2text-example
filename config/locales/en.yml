@@ -7,7 +7,7 @@ en:
         "%a %m/%d/%y"
   helpers:
     submit:
-      pdf_file:
+      parsed_pdf:
         create: Submit
 
   time:

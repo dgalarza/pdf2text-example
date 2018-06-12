@@ -8,5 +8,5 @@ en:
     error_notification:
       default_message: "Please review the problems below:"
     labels:
-      pdf_file:
+      parsed_pdf:
         url: PDF Url

@@ -2,14 +2,15 @@ require 'sinatra/base'
 
 class FakePdfSource < Sinatra::Base
   get '/valid.pdf' do
-    valid_file = File.join(
+    file_path = File.join(
       Rails.root,
       'spec',
-      'support',
       'fixtures',
-      'assignment.pdf'
+      'code_examples.pdf'
     )
 
-    send_file valid_file, disposition: 'attachment'
+    valid_file = File.open(file_path)
+
+    send_file valid_file, disposition: 'attachment', status: 200
   end
 end

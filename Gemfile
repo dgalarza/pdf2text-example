@@ -1,9 +1,4 @@
-source "https://rubygems.org"
-
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
+source "http://rubygems.org"
 
 ruby "2.5.1"
 
@@ -18,6 +13,7 @@ gem "sprockets", ">= 3.0.0"
 gem "title"
 gem "bootsnap", require: false
 gem "simple_form"
+gem "pdf-reader"
 
 group :development do
   gem "listen"

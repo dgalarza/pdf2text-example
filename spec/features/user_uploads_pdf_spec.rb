@@ -10,6 +10,6 @@ RSpec.feature "user uploads pdf" do
     fill_in "PDF Url", with: "#{pdf_server}/valid.pdf"
     click_on "Submit"
 
-    expect(page).to have_content 'Code samples'
+    expect(page).to have_content 'Code Samples'
   end
 end

@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
   root to: 'home#show'
 
-  resources :pdfs, only: [] do
-    collection do
-      post :parse
-    end
-  end
+  resources :parsed_pdfs, only: [:create]
 end
