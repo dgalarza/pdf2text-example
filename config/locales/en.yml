@@ -5,6 +5,10 @@ en:
         "%m/%d/%Y"
       with_weekday:
         "%a %m/%d/%y"
+  helpers:
+    submit:
+      pdf_file:
+        create: Submit
 
   time:
     formats:
