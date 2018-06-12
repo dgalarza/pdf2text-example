@@ -10,9 +10,6 @@ set -e
 gem install bundler --conservative
 bundle check || bundle install
 
-# Set up database and add any development seed data
-bin/rails dev:prime
-
 if [ ! -d .git/safe ] && echo $PATH | grep .git/safe > /dev/null; then
   echo "-----------------------------------------------------------------------"
   echo

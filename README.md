@@ -7,16 +7,14 @@ with the necessary dependencies to run and test this app:
 
     % ./bin/setup
 
-It assumes you have a machine equipped with Ruby, Postgres, etc. If not, set up
+It assumes you have a machine equipped with Ruby, etc. If not, set up
 your machine with [this script].
 
 [this script]: https://github.com/thoughtbot/laptop
 
-After setting up, you can run the application using [Heroku Local]:
+After setting up, you can run the application using
 
-    % heroku local
-
-[Heroku Local]: https://devcenter.heroku.com/articles/heroku-local
+    % rails s
 
 ## Guidelines
 
