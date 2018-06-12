@@ -11,6 +11,7 @@ gem "rails", "~> 5.2.0"
 gem "sass-rails", "~> 5.0"
 gem "sprockets", ">= 3.0.0"
 gem "title"
+gem "uglifier"
 gem "bootsnap", require: false
 gem "simple_form"
 gem "pdf-reader"
@@ -40,6 +41,8 @@ end
 
 gem "suspenders", group: [:development, :test]
 
+gem 'bourbon', '~> 5.0'
+gem 'neat', '~> 2.1'
 gem 'spring-commands-rspec', group: :development
 gem 'rspec-rails', '~> 3.6', group: [:development, :test]
 gem 'shoulda-matchers', group: :test
