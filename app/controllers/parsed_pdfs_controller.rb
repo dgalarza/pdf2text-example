@@ -1,5 +1,3 @@
-require "open-uri"
-
 class ParsedPdfsController < ApplicationController
   def create
     parser = PDFParser.new(pdf_url)

@@ -2,7 +2,7 @@ require "rails_helper"
 require "capybara_discoball"
 
 RSpec.feature "user uploads pdf" do
-  scenario "parses pdf text" do
+  scenario "parses pdf text", :js do
     pdf_server = Capybara::Discoball.spin(FakePdfSource)
 
     visit root_path
