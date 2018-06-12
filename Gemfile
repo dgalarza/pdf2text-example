@@ -3,7 +3,6 @@ source "http://rubygems.org"
 ruby "2.5.1"
 
 gem "flutie"
-gem "honeybadger"
 gem "jquery-rails"
 gem "puma"
 gem "rack-canonical-host"
@@ -12,7 +11,6 @@ gem "sass-rails", "~> 5.0"
 gem "sprockets", ">= 3.0.0"
 gem "title"
 gem "uglifier"
-gem "bootsnap", require: false
 gem "simple_form"
 gem "pdf-reader"
 
