@@ -7,22 +7,17 @@ end
 
 ruby "2.5.1"
 
-gem "autoprefixer-rails"
 gem "flutie"
 gem "honeybadger"
 gem "jquery-rails"
-gem "pg", "~> 0.18"
 gem "puma"
 gem "rack-canonical-host"
 gem "rails", "~> 5.2.0"
-gem "recipient_interceptor"
 gem "sass-rails", "~> 5.0"
-gem "skylight"
 gem "sprockets", ">= 3.0.0"
 gem "title"
-gem "uglifier"
 gem "bootsnap", require: false
-
+gem "simple_form"
 
 group :development do
   gem "listen"
@@ -40,18 +35,15 @@ group :development, :test do
 end
 
 group :test do
-  gem "formulaic"
   gem "launchy"
   gem "simplecov", require: false
-  gem "timecop"
+  gem "sinatra"
   gem "webmock"
+  gem "capybara_discoball"
 end
 
 gem "suspenders", group: [:development, :test]
 
-gem 'high_voltage'
-gem 'bourbon', '~> 5.0'
-gem 'neat', '~> 2.1'
 gem 'spring-commands-rspec', group: :development
 gem 'rspec-rails', '~> 3.6', group: [:development, :test]
 gem 'shoulda-matchers', group: :test
